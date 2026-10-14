@@ -46,7 +46,6 @@ export function columnNamesAsJson(columns: string[]): string {
   return JSON.stringify(columns);
 }
 
-
 function markdownCell(cell: unknown, nullLabel: string = "null"): string {
   return formatCellValue(cell, nullLabel)
     .replace(/\|/g, "\\|")
